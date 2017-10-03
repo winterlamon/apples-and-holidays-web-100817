@@ -52,6 +52,7 @@ def all_supplies_in_holidays(holiday_hash)
       holiday.to_s.capitalize! + ":"
     holiday.collect do |supplies|
       supplies.join(",")
+      binding.pry
       supplies.capitalize!
       supplies.split(" ")
     end
