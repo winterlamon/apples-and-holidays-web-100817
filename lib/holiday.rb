@@ -35,15 +35,6 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   holiday_hash
 end
 
-=begin
-:season = :fall
-:holiday_name = :thanksgiving
-supply_array = ["turkey", "plates", "pillows"]
-holiday_hash = {}
-holiday_hash[:season] = {holiday_name: supply_array}
-holiday_hash
-=end
-
 def all_winter_holiday_supplies(holiday_hash)
   holiday_hash[:winter].values.flatten
 end
