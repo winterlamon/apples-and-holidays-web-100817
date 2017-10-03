@@ -53,10 +53,10 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.collect do |holiday, supplies|
 #      supplies = supplies.join(", ")
 #      supplies.capitalize.to_a
-      holiday.to_s.split("_")!
-      holiday.collect do |word|
+      holiday_format = holiday.to_s.split("_").collect do |word|
         word.capitalize!
       end
+      holiday_format.join(" ")
       puts "  #{holiday}: #{supplies.join(", ")}"
 #      puts "supplies.join(" ").capitalize!"
 #      puts supplies.split(", ")
