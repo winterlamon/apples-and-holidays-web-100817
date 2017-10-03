@@ -52,9 +52,7 @@ def all_supplies_in_holidays(holiday_hash)
     season.to_s.capitalize! + ":"
       holiday.to_s.capitalize! + ":"
     holiday.collect do |supplies|
-      supplies.join(",")
-      binding.pry
-      supplies.capitalize!
+      supplies.join(",").capitalize!
       supplies.split(" ")
     end
   end
